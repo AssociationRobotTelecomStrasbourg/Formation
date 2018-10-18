@@ -36,7 +36,7 @@ void setup() {
   delay(1000);
   claw.write(20);
   
-  
+  //Test
 }
 
 void loop() {
