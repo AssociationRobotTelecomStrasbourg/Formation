@@ -14,6 +14,8 @@ int SuiviLigne::brut() const {
 bool SuiviLigne::etat() const {
   /*
    * À compléter
+   * blanc si la valeur analogique est inférieur à seuil
+   * noir sinon
    * Retourne true pour le blanc
    * false pour le noir
    */

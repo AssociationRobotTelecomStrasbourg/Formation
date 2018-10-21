@@ -5,9 +5,8 @@
  *            Puis le lire et le renvoyer
  *            (Serial.(begin, available, readString, println))
  *           Puis récupérer l'état d'un bouton (Serial.parseInt)
- *           Puis controler la led 13
+ *           Puis controler la led 13 
  *           Puis un moteur continu ou un servomoteur
- * Fonction: Serial.(available, begin, println, readString)
  */
  
 void setup() {

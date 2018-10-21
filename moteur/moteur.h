@@ -4,8 +4,7 @@
 class Moteur{
 public:
   Moteur(int pin1, int pin2);
-  void tourner(int pwm, int temps = 0) const; //Actionne le moteur et 
-  //attend "temps" milliseconde, 0 si argument non spécifié
+  void tourner(int pwm) const; //Actionne le moteur au pwm attendu
   
 private:
   //Pins du moteur

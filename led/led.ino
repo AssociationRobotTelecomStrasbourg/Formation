@@ -4,15 +4,10 @@
  *           Puis compléter la méthode clignote de Led (millis)
  */
 
-#include "led.h"
-
-Led l(13);
-
-void setup() {}
+void setup() {
+  
+}
 
 void loop() {
-  l.allume();
-  delay(1000);
-  l.eteint();
-  delay(1000);
+  
 }

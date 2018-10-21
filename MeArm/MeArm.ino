@@ -1,15 +1,21 @@
 #include <Servo.h>
 
+//Initialisation des Servomoteurs
 Servo claw, left, right, middle;
 
 void setup() {
+  //Initialisation de la liaison série
   Serial.begin(9600);
+  
+  //Assignation des pins pouvant faire du pwm
   claw.attach(6);
   left.attach(9);
   right.attach(10);
   middle.attach(11);
 
-  
+  //Différentes commandes avec des délais
+  //entre chacunes d'elles pour laisser les
+  //servomoteurs atteindre leur positions.
   claw.write(20);
   delay(2000);
   claw.write(100); //0-100
