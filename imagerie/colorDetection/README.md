@@ -19,13 +19,13 @@ Open the given link in your browser (Firefox)
 
 Install python 3.7.1
 
-`sudo apt install python`
+`sudo apt install python3`
 
 * Pip
 
 Install pip to be able to install and manage python package.
 
-`sudo apt install python-pip`
+`sudo apt install python3-pip`
 
 * OpenCV, matplotlib, scipy and numpy 
 
