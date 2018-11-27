@@ -1,5 +1,8 @@
 Tutorial for color detection
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- 
 # Prerequisites
 
@@ -30,4 +33,10 @@ Install pip to be able to install and manage python package.
 * OpenCV, matplotlib, scipy and numpy 
 
 `sudo pip install opencv-python matplotlib scipy numpy`
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
