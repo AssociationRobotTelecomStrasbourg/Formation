@@ -30,4 +30,4 @@ Launch it in command line in the folder where you have the .ipynb
 Open the given link in your browser (Firefox)
 
 # Tutorials
-You can begin with the tutorial in `colorDetection` and continue with `objectCount`
+You can begin with the tutorial in `colorDetection` and continue with `countObject`
