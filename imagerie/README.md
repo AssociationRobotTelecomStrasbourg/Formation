@@ -5,9 +5,9 @@ Tutorial for image processing
 
 * Python 
 
-Install python 3.7.1
+Install python 3, replace the star '*' with the wanted python version. (Tab to know possibilities) 
 
-`sudo apt install python`
+`sudo apt install python*`
 
 * Pip
 
