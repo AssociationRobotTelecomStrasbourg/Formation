@@ -5,9 +5,7 @@ Tutorial for image processing
 
 * Python 
 
-Install python 3, replace the star '*' with the wanted python version. (Tab to know possibilities) 
-
-`sudo apt install python*`
+`sudo apt install python3`
 
 * Pip
 
@@ -23,7 +21,7 @@ Install pip to be able to install and manage python package.
 
 Install it
 
-`sudo pip install jupyter`
+`sudo pip3 install jupyter`
 
 Launch it in command line in the folder where you have the .ipynb
 
