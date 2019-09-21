@@ -1,17 +1,39 @@
+# Resources to add
+- [ ] Schematics with Fritzing
+  - [ ] LED
+  - [ ] Button
+  - [ ] Potentiometer
+  - [ ] Ultrasound
+  - [ ] DC motor
+  - [ ] Servomotor
+  - [ ] Line follow sensor
+- [ ] Summary
+- [ ] Links for more details
+- [ ] Quiz
+- [ ] Exercises
+- [ ] Challenges
+
 # Content to explain
+
+## Serial
+- [ ] begin()
+- [ ] available()
+- [ ] print()/println()
+- [ ] parseInt()
+- [ ] parseFloat()
+
 ## Digital
 - [ ] pinMode()
 - [ ] digitalRead()
 - [ ] digitalWrite()
 
-## Analog
-- [ ] analogRead()
-- [ ] analogWrite()
-
-
 ## Time
 - [ ] delay()
 - [ ] millis()
+
+## Analog
+- [ ] analogRead()
+- [ ] analogWrite()
 
 ## Math
 - [ ] constrain()
@@ -26,10 +48,3 @@
 - [ ] detachInterrupt()
 - [ ] interrupts()
 - [ ] noInterrupts()
-
-## Serial
-- [ ] begin()
-- [ ] available()
-- [ ] print()/println()
-- [ ] parseInt()
-- [ ] parseFloat()
