@@ -1,4 +1,4 @@
-# Resources to add
+# Formation Guide
 - [ ] Schematics with Fritzing
   - [ ] LED
   - [ ] Button
@@ -12,6 +12,7 @@
 - [ ] Quiz
 - [ ] Exercises
 - [ ] Challenges
+- [ ] Add submodule to every library used in the formation
 
 # Content to explain
 
