@@ -16,13 +16,6 @@
 
 # Content to explain
 
-## Serial
-- [ ] begin()
-- [ ] available()
-- [ ] print()/println()
-- [ ] parseInt()
-- [ ] parseFloat()
-
 ## Digital
 - [ ] pinMode()
 - [ ] digitalRead()
@@ -35,6 +28,13 @@
 ## Analog
 - [ ] analogRead()
 - [ ] analogWrite()
+
+## Serial
+- [ ] begin()
+- [ ] available()
+- [ ] print()/println()
+- [ ] parseInt()
+- [ ] parseFloat()
 
 ## Math
 - [ ] constrain()
