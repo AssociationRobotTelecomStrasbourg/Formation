@@ -44,7 +44,7 @@
 - [ ] randomSeed()
 - [ ] random()
 
-## Interruption
+## Interrupt
 - [ ] attachInterrupt()
 - [ ] detachInterrupt()
 - [ ] interrupts()
