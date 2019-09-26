@@ -1,5 +1,30 @@
 # Formation Arduino
 
+## Spécificités de programmation
+Un programme Arduino utilise le langage C++.
+```c++
+// Programme Arduino
+void setup {
+  // setup() est exécuté une fois au démarrage de l'Arduino.
+}
+
+void loop {
+  // loop() est exécuté à l'infini après setup()
+}
+
+// Équivalent C++ standard
+void main() {
+  setup();
+  while(true) {
+    loop();
+  }
+}
+```
+
+On n'utilise pas `int`, `long`, `short`, `unsigned` car les tailles en mémoire varie selon les systèmes choisis.
+
+On utilise `intX_t`, `uintX_t` (e.g. `int8_t` pour un entier signé sur 8 bits, `uint32_t` pour un entier non signé sur 32 bits).
+
 ## Entrées/Sorties numériques (Digital Input/Output)
 
 Les signaux numériques sont des 0 et 1 représentés par GND (0V) et VCC (5V) pour Arduino Uno et Nano.
@@ -12,9 +37,50 @@ Les deux modes sont :
 - `OUTPUT`
 - `INPUT`
 
-On régle l'état de la pin avec
-[`digitalWrite(pin, value)`](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/). L'état est
-[`digitalRead(pin)`](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/)
+L'état d'une pin est soit :
+- `HIGH`
+- `LOW`
+
+On régle l'état d'une pin dans le mode `OUTPUT` avec
+[`digitalWrite(pin, value)`](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/).
+
+On lit l'état d'une pin qui est dans le mode `INPUT` avec
+[`digitalRead(pin)`](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalread/) qui retourne l'état commme précédemment.
+
+
+![led](led.png)
+```c++
+const uint8_t LED 13;
+
+void setup() {
+  pinMode(LED, OUTPUT);
+  digitalWrite(LED, HIGH);
+}
+
+void loop() {
+
+}
+```
+
+![button_extern_pullup](button_extern_pullup.png)
+```c++
+const uint8_t LED 13;
+const uint8_t BUTTON 2;
+
+void setup() {
+  pinMode(LED, OUTPUT);
+  pinMode(BUTTON, INPUT);
+}
+
+void loop() {
+  digitalWrite(LED, digitalRead(BUTTON));
+}
+```
+
+![button_intern_pullup](button_intern_pullup.png)
+```c++
+pinMode(BUTTON, INPUT_PULLUP);
+```
 
 ## Gestion du temps
 Différence entre bloquant et non bloquant
