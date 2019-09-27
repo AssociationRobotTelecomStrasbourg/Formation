@@ -1,7 +1,7 @@
 # Formation Arduino
 
 ## Spécificités de programmation
-Un programme Arduino utilise le langage C++.
+Un programme Arduino utilise le langage C/C++.
 ```c++
 // Programme Arduino
 void setup {
@@ -12,7 +12,7 @@ void loop {
   // loop() est exécuté à l'infini après setup()
 }
 
-// Équivalent C++ standard
+// Équivalent C/C++ standard
 void main() {
   setup();
   while(true) {
@@ -21,7 +21,7 @@ void main() {
 }
 ```
 
-On n'utilise pas `int`, `long`, `short`, `unsigned` car les tailles en mémoire varie selon les systèmes choisis.
+On n'utilise pas ici `int`, `long`, `short`, `unsigned` car les tailles en mémoire varie selon les systèmes choisis.
 
 On utilise `intX_t`, `uintX_t` (e.g. `int8_t` pour un entier signé sur 8 bits, `uint32_t` pour un entier non signé sur 32 bits).
 
@@ -29,19 +29,19 @@ On utilise `intX_t`, `uintX_t` (e.g. `int8_t` pour un entier signé sur 8 bits, 
 
 Les signaux numériques sont des 0 et 1 représentés par GND (0V) et VCC (5V) pour Arduino Uno et Nano.
 
-Les entrées numériques mesures l'état de la pin.
-Les sorties numériques contrôle l'état de la pin.
+Les entrées numériques mesurent l'état de la pin.
+Les sorties numériques contrôlent l'état de la pin.
 
-On peut choisir le mode entrée ou sortie avec la fonctions [`pinMode(pin, mode)`](https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/).
+On peut choisir le mode entrée ou sortie de la pin avec la fonctions [`pinMode(pin, mode)`](https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/).
 Les deux modes sont :
 - `OUTPUT`
 - `INPUT`
 
-L'état d'une pin est soit :
+L'état d'une pin peut être :
 - `HIGH`
 - `LOW`
 
-On régle l'état d'une pin dans le mode `OUTPUT` avec
+On règle l'état d'une pin dans le mode `OUTPUT` avec
 [`digitalWrite(pin, value)`](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/).
 
 On lit l'état d'une pin qui est dans le mode `INPUT` avec
