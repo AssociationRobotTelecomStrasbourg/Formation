@@ -1,51 +1,33 @@
-# Formation Guide
-- [ ] Schematics with Fritzing
-  - [ ] LED
-  - [ ] Button
-  - [ ] Potentiometer
-  - [ ] Ultrasound
-  - [ ] DC motor
-  - [ ] Servomotor
-  - [ ] Line follow sensor
-- [ ] Summary
-- [ ] Links for more details
-- [ ] Quiz
-- [ ] Exercises
-- [ ] Challenges
-- [ ] Add submodule to every library used in the formation
+Tutorial for image processing
 
-# Content to explain
+--- 
+# Prerequisites
 
-## Digital
-- [ ] pinMode()
-- [ ] digitalRead()
-- [ ] digitalWrite()
+* Python 
 
-## Time
-- [ ] delay()
-- [ ] millis()
+`sudo apt install python3`
 
-## Analog
-- [ ] analogRead()
-- [ ] analogWrite()
+* Pip
 
-## Serial
-- [ ] begin()
-- [ ] available()
-- [ ] print()/println()
-- [ ] parseInt()
-- [ ] parseFloat()
+Install pip to be able to install and manage python package.
 
-## Math
-- [ ] constrain()
-- [ ] map()
+`sudo apt install python3-pip`
 
-## Random
-- [ ] randomSeed()
-- [ ] random()
+* OpenCV, matplotlib, scipy and numpy 
 
-## Interrupt
-- [ ] attachInterrupt()
-- [ ] detachInterrupt()
-- [ ] interrupts()
-- [ ] noInterrupts()
+`sudo pip3 install opencv-python matplotlib scipy numpy`
+
+* Jupyter-notebook
+
+Install it
+
+`sudo pip3 install jupyter`
+
+Launch it in command line in the folder where you have the .ipynb
+
+`jupyter-notebook`
+
+Open the given link in your browser (Firefox)
+
+# Tutorials
+You can begin with the tutorial in `colorDetection` and continue with `countObject`
